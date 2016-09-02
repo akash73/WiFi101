@@ -28,21 +28,6 @@ extern "C" {
   #include "driver/include/m2m_periph.h"
 }
 
-/*
-
-* Start Wifi as P2P device. P2P is also known as Wi-Fi Direct.
-
-*
-
-* param name: Set your device name which will be shown in the peer device.
-
-* param channel: Wifi channel to use. Valid values are 0, 5 and 10.	*
-
-*/
-
-uint8_t beginP2P(const char *name);
-uint8_t beginP2P(const char *name, uint8_t channel);
-
 static void wifi_cb(uint8_t u8MsgType, void *pvMsg)
 {
 	switch (u8MsgType) {
